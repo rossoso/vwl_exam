@@ -1,3 +1,4 @@
+<!-- Daniel Rossmaier -->
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -6,18 +7,19 @@
 	<title>Probeklausur</title>
 	<script>
 		answers=[['0 Euro','10 Euro','40 Euro','50 Euro'],
-			['Nachfrageelastizit&auml;t ist positiv und Angebotselastizit&auml;. Alle obigen Aussagen sind richtig. t ist negativ.',
+			['Nachfrageelastizit&auml;t ist positiv und Angebotselastizit&aumlt ist negativ.',
 			'Nachfrageelastizit&auml;t ist negativ und Angebotselastizit&auml;t ist negativ.',
 			'Nachfrageelastizit&auml;t ist positiv und Angebotselastizit&auml;t ist positiv.',
-			'Nachfrageelastizit&auml;t ist negativ und Angebotselastizit&auml;t ist positiv.'],
-			['die Zahlungsbereitschaft f&uuml;r eine weitere Einheit h&ouml;her ist als die Grenzkosten der Produktion dieser Einheit.',
-			'die Zahlungsbereitschaft f&uuml;r eine weitere Einheit niedriger ist als die Grenzkosten der Produktion dieser Einheit.',
+			'Nachfrageelastizit&auml;t ist negativ und Angebotselastizit&auml;t ist positiv.',
+			'Alle obigen Aussagen sind richtig.'],
+			['Die Zahlungsbereitschaft f&uuml;r eine weitere Einheit h&ouml;her ist als die Grenzkosten der Produktion dieser Einheit.',
+			'Die Zahlungsbereitschaft f&uuml;r eine weitere Einheit niedriger ist als die Grenzkosten der Produktion dieser Einheit.',
 			'Eine effiziente Menge zur Verf&uuml;gung gestellt wird.',
 			'Produzenten mehr herstellen als zum bindenden H&ouml;chstpreis nachgefragt wird.'],
-			['die zus&auml;tzliche Steuer pro Einheit die aufgrund der Steuererh&ouml;hung verminderte Anzahl an verkauften Einheiten mehr als ausgleicht.',
-			'die zus&auml;tzliche Steuer pro Einheit die aufgrund der Steuererh&ouml;hung verminderte Anzahl an verkauften Einheiten nicht ausgleicht.',
-			'er derselbe ist wie im aufw&auml;rtsgeneigten Teil der Lafferkurve',
-			'keine der oben genannten Antworten richtig ist.'],
+			['Die zus&auml;tzliche Steuer pro Einheit die aufgrund der Steuererh&ouml;hung verminderte Anzahl an verkauften Einheiten mehr als ausgleicht.',
+			'Die zus&auml;tzliche Steuer pro Einheit die aufgrund der Steuererh&ouml;hung verminderte Anzahl an verkauften Einheiten nicht ausgleicht.',
+			'Er derselbe ist wie im aufw&auml;rtsgeneigten Teil der Lafferkurve',
+			'Keine der oben genannten Antworten richtig ist.'],
 			['Im neuen Gleichgewicht werden mehr Smartphones verkauft und der Preis steigt.',
 			'Der Preis sinkt, aber der Effekt auf die gehandelte Menge kann in beide Richtungen gehen.',
 			'Die gehandelte Menge steigt, aber der Effekt auf den Preis kann in beide Richtungen gehen.',
@@ -186,9 +188,20 @@
 		var question=-1;
 		var given_answer = [];
 		const correct_answer =  [3,3,0,1,2,3,1,2,2,2,0,1,2,1,2,2,0,1,3,1,3,3,3,2,3,4,1,3,1,2,0,3,1,1,2,2,0,3,3,2,2,0,3,0];
+		function back(){
+			question = question-1;
+			given_answer.pop();
+			document.getElementById('inner_question').innerHTML = '<h2>'+questions[question]+'</h2>';				
+			document.getElementById('answer1').innerHTML = answers[question][0];
+			document.getElementById('answer2').innerHTML = answers[question][1];
+			document.getElementById('answer3').innerHTML = answers[question][2];
+			document.getElementById('answer4').innerHTML = answers[question][3];
+			document.getElementById('answer5').innerHTML = answers[question][4];
+			document.getElementById('answer6').innerHTML = answers[question][5];
+		}
 		function next(){	
 			if(question < 40){
-				if(question == -1){
+				if(question < 0){
 					question=0;
 					document.getElementById('inner_question').innerHTML = '<h2>'+questions[question]+'</h2>';				
 					document.getElementById('answer1').innerHTML = answers[question][0];
@@ -200,15 +213,23 @@
 					var checkboxes = document.getElementsByName('ans');
 					for(var i=0;i<checkboxes.length;i++){
 						if(checkboxes[i].checked){
-							checkboxes[i].click();}
+							checkboxes[i].click();
+						}
 					}
 					question++;
 				}else{
 					var checkboxes = document.getElementsByName('ans');
 					for(var i=0;i<checkboxes.length;i++){
 						if(checkboxes[i].checked){
+							if(correct_answer[(question-1)] == i){
+								alert('correct!');
+							}
+							else{
+								alert('false!');
+							}
 							given_answer.push(parseInt(checkboxes[i].value));
-							checkboxes[i].click();}
+							checkboxes[i].click();
+						}
 					}
 					document.getElementById('inner_question').innerHTML = '<h2>'+questions[question]+'</h2>';				
 					document.getElementById('answer1').innerHTML = answers[question][0];
@@ -243,28 +264,29 @@
 			}
 			
 		}
+		
 	
 
 	</script>
 </head>
 <body>
-	<div id="inner_question"><h2>Zweiundvierzig ist eine Zahl!</h2></div>
+	<div id="inner_question"><h2>-</h2></div>
 	<form>
 	<input type="checkbox" id="a1" name="ans" value="0">
-	<label id="answer1" for="a1">Welche Frage ist das?</label><br>
+	<label id="answer1" for="a1">-</label><br>
 	<input type="checkbox" id="a2" name="ans" value="1">
-	<label id="answer2" for="a2">Was geht hier vor sich?</label><br>
+	<label id="answer2" for="a2">-</label><br>
 	<input type="checkbox" id="a3" name="ans" value="2">
-	<label id="answer3" for="a3">Warum so viele Voegel?</label><br>
+	<label id="answer3" for="a3">-</label><br>
 	<input type="checkbox" id="a4" name="ans" value="3">
-	<label id="answer4" for="a4"></label><br>
+	<label id="answer4" for="a4">-</label><br>
 	<input type="checkbox" id="a5" name="ans" value="4">
 	<label id="answer5" for="a5">-</label><br>
 	<input type="checkbox" id="a6" name="ans" value="5">
 	<label id="answer6" for="a6">-</label><br><br>
 
 	<input type="button" onclick="next()" value="Next!">
-	
+	<input type="button" onclick="back()" value="Back!">
 	</form>
 
 </body>
