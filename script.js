@@ -198,7 +198,7 @@ answers=[['0 Euro','10 Euro','40 Euro','50 Euro'],
 			document.getElementById('answer6').innerHTML = answers[question][5];
          
 		}
-		unction next(){	
+		function next(){	
 			if(question < 40){
 				if(question < 0){
 					question=0;
@@ -211,7 +211,7 @@ answers=[['0 Euro','10 Euro','40 Euro','50 Euro'],
 					document.getElementById('answer6').innerHTML = answers[question][5];
 					var checkboxes = document.getElementsByName('ans');
 					for(var i=0;i<checkboxes.length;i++){
-						if(checkboäxes[i].checked){
+						if(checkboxes[i].checked){
 							checkboxes[i].click();
 						}
 					}
