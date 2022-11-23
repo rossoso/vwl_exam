@@ -215,7 +215,7 @@
 							checkboxes[i].click();
 						}
 					}
-					question++;
+					
 				}else{
 					var checkboxes = document.getElementsByName('ans');
 					for(var i=0;i<checkboxes.length;i++){
@@ -263,13 +263,12 @@
 			}
 			
 		}
-document.getElementById("back").onclick = back();
-document.getElementById("next").onclick = next();
- 
+alert('hitse go!');
+while(question < 40 && question > -2){
+document.getElementById('back').onclick = back();
+document.getElementById('next').onclick = next();}
+	
 
-
- 
-                
 
 
 
