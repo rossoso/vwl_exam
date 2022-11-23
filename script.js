@@ -1,5 +1,5 @@
 
-answers=[['0 Euro','10 Euro','40 Euro','50 Euro'],
+            var answers=[['0 Euro','10 Euro','40 Euro','50 Euro'],
 			['Nachfrageelastizit&auml;t ist positiv und Angebotselastizit&aumlt ist negativ.',
 			'Nachfrageelastizit&auml;t ist negativ und Angebotselastizit&auml;t ist negativ.',
 			'Nachfrageelastizit&auml;t ist positiv und Angebotselastizit&auml;t ist positiv.',
@@ -138,7 +138,7 @@ answers=[['0 Euro','10 Euro','40 Euro','50 Euro'],
 			'Das Grenzprodukt der Arbeit ist unabh&auml;ngig vom Arbeitseinsatz L.',
 			'Das Grenzprodukt der Arbeit ist unabh&auml;ngig vom Landeinsatz B.',
 			'Keine oben genannten Aussagen ist richtig.']];
-		questions=['Sie haben eine kostenlose Eintrittskarte f&uuml;r ein Konzert von Taylor Swift gewonnen. Das Ticket hat keinen Wiederverkaufswert. Ed Sheeran gibt am selben Abend ebenfalls ein Konzert. Der Besuch dieses Konzerts stellt ihre n&auml;chstbeste Alternative dar. Konzertkarten f&uuml;r Ed Sheeran kosten 40 Euro. Prinzipiell w&auml;ren Sie bereit, 50 Euro f&uuml;r den Besuch des Konzerts von Ed Sheeran zu bezahlen. Angenommen, ansonsten entstehen ihnen keine Kosten aus einem Konzertbesuch. Gegeben diese Informationen, wie hoch sind die Opportunit&auml;tskosten des Besuchs des Konzerts von Taylor Swift?',
+		var questions=['Sie haben eine kostenlose Eintrittskarte f&uuml;r ein Konzert von Taylor Swift gewonnen. Das Ticket hat keinen Wiederverkaufswert. Ed Sheeran gibt am selben Abend ebenfalls ein Konzert. Der Besuch dieses Konzerts stellt ihre n&auml;chstbeste Alternative dar. Konzertkarten f&uuml;r Ed Sheeran kosten 40 Euro. Prinzipiell w&auml;ren Sie bereit, 50 Euro f&uuml;r den Besuch des Konzerts von Ed Sheeran zu bezahlen. Angenommen, ansonsten entstehen ihnen keine Kosten aus einem Konzertbesuch. Gegeben diese Informationen, wie hoch sind die Opportunit&auml;tskosten des Besuchs des Konzerts von Taylor Swift?',
 				'Bei Preiselastizit&auml;ten geben wir h&auml;ufig nur den Betrag an, weil f&uuml;r gew&ouml;hnlich das Folgende gilt:',
 				'Ein bindender H&ouml;chstpreis hat zur Folge, dass im Gleichgewicht',
 				'Wenn wir uns im abw&auml;rtsgeneigten Bereich der Lafferkurve befinden k&ouml;nnen wir &uuml;ber den Effekt einer weiteren Steuererh&ouml;hung sagen, dass',
