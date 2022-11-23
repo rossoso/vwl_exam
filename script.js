@@ -178,6 +178,7 @@
 				'In einer Volkswirtschaft leben zehn Personen. Zwei Personen befinden sich im Altersruhestand und beziehen eine staatliche Rente. Es gibt ein Kind im Grundschulalter. Sein Vater ist nicht erwerbst&auml;tig, sucht aktiv nach Arbeit aber hat sich nicht bei der Arbeitsagentur als arbeitslos registriert. Es gibt einen selbstst&auml;ndigen Gastronom, eine selbstst&auml;ndige Architektin und eine angestellte Grundschullehrerin. Eine Ingenieurin hat im Moment keine Anstellung, sucht aktiv nach Arbeit und hat sich bei der Arbeitsagentur als arbeitslos registriert. Eine Person ist als Soldat bei der Bundeswehr angestellt. Ein Architekt arbeitet zehn Stunden in der Woche in eine Architekturb&uuml;ro, sucht aber nach einer Vollzeitstelle mit einer Wochenarbeitszeit von etwa 40 Stunden und hat sich darum bei der Arbeitsagentur als arbeitssuchend registriert. Berechnen Sie die Arbeitslosenquote der Bundesagentur f&uuml;r Arbeit.',
 				'Die Produktionsfunktion Y=F(L,B) beschreibt, welche Menge Output Y mit gegebenen Inputmengen Arbeit L und Land B hergestellt werden kann. Die Outputfunktion sei: Y = F(L,B) = L hoch 0,6 * B hoch 0,3. Welche der folgenden Aussagen &uuml;ber die Produktionsfunktion Y=F(L,B) ist korrekt?'];
 		
+               var question = 0;
                         document.getElementById('inner_question').innerHTML = '<h2>'+questions[question]+'</h2>';				
 			document.getElementById('answer1').innerHTML = answers[question][0];
 			document.getElementById('answer2').innerHTML = answers[question][1];
@@ -186,10 +187,17 @@
 			document.getElementById('answer5').innerHTML = answers[question][4];
 			document.getElementById('answer6').innerHTML = answers[question][5];
     
-                var question=0;
+     
 		var given_answer = [];
 		const correct_answer =  [3,3,0,1,2,3,1,2,2,2,0,1,2,1,2,2,0,1,3,1,3,3,3,2,3,4,1,3,1,2,0,3,1,1,2,2,0,3,3,2,2,0,3,0];
-		function back(){
+
+//button to start logging
+btnBack = document.getElementById('back');
+btnNext = document.getElementById('next');
+	
+	
+
+                function back(){
                         if(question > 0){
 			question = question-1;
 			given_answer.pop();
@@ -269,6 +277,10 @@
 		}
 
  
+document.addEventListener("DOMContentLoaded", function () {
+    btnBack.addEventListener("click", back()); 
+    btnNext.addEventListener("click", next());
+});
 
 
  
