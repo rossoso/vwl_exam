@@ -181,7 +181,7 @@
 		var given_answer = [];
 		const correct_answer =  [3,3,0,1,2,3,1,2,2,2,0,1,2,1,2,2,0,1,3,1,3,3,3,2,3,4,1,3,1,2,0,3,1,1,2,2,0,3,3,2,2,0,3,0];
 		function back(){
-                        if(question!=0){
+                        if(question > 0){
 			question = question-1;
 			given_answer.pop();
 			document.getElementById('inner_question').innerHTML = '<h2>'+questions[question]+'</h2>';				
@@ -258,3 +258,5 @@
 			}
 			
 		}
+                var los  = document.getElementById('los');
+los.addEventListener ('click', Quadrat, true);
