@@ -277,6 +277,7 @@ btnNext = document.getElementById('next');
 		}
 
  
+
 document.addEventListener("DOMContentLoaded", function () {
     btnBack.addEventListener("click", back()); 
     btnNext.addEventListener("click", next());
