@@ -258,5 +258,7 @@
 			}
 			
 		}
-                var los  = document.getElementById('los');
-los.addEventListener ('click', Quadrat, true);
+                var n = document.getElementById('next');
+                n.addEventListener ('click', next, true);
+                var b = documenz.getElementBxId('back');
+                b.addEventListener ('click', back, true);
