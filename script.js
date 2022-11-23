@@ -184,7 +184,7 @@
 		const correct_answer =  [3,3,0,1,2,3,1,2,2,2,0,1,2,1,2,2,0,1,3,1,3,3,3,2,3,4,1,3,1,2,0,3,1,1,2,2,0,3,3,2,2,0,3,0];
 
 
-                function back(){
+                export function back(){
 
 			question = question-1;
 			given_answer.pop();
@@ -197,7 +197,7 @@
 			document.getElementById('answer6').innerHTML = answers[question][5];
          
 		}
-		function next(){	
+		export function next(){	
 			if(question < 40){
 				if(question < 0){
 					question=0;
