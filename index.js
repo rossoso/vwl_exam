@@ -1,4 +1,4 @@
-
+alert('hallo');
             var answers=[['0 Euro','10 Euro','40 Euro','50 Euro'],
 			['Nachfrageelastizit&auml;t ist positiv und Angebotselastizit&aumlt ist negativ.',
 			'Nachfrageelastizit&auml;t ist negativ und Angebotselastizit&auml;t ist negativ.',
@@ -263,10 +263,10 @@
 			}
 			
 		}
-alert('hitse go!');
-while(question < 40 && question > -2){
+
+
 document.getElementById('back').onclick = back();
-document.getElementById('next').onclick = next();}
+document.getElementById('next').onclick = next();
 	
 
 
