@@ -183,11 +183,6 @@
 		var given_answer = [];
 		const correct_answer =  [3,3,0,1,2,3,1,2,2,2,0,1,2,1,2,2,0,1,3,1,3,3,3,2,3,4,1,3,1,2,0,3,1,1,2,2,0,3,3,2,2,0,3,0];
 
-//buttons
-btnBack = document.getElementById('back');
-btnNext = document.getElementById('next');
-	
-	
 
                 function back(){
 
@@ -269,11 +264,6 @@ btnNext = document.getElementById('next');
 		}
 
  
-
-document.addEventListener("DOMContentLoaded", function () {
-    btnBack.addEventListener("click", back()); 
-    btnNext.addEventListener("click", next());
-});
 
 
  
