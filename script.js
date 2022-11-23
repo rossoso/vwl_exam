@@ -1,4 +1,4 @@
-<script type="text/javascript">                
+
 answers=[['0 Euro','10 Euro','40 Euro','50 Euro'],
 			['Nachfrageelastizit&auml;t ist positiv und Angebotselastizit&aumlt ist negativ.',
 			'Nachfrageelastizit&auml;t ist negativ und Angebotselastizit&auml;t ist negativ.',
@@ -263,7 +263,8 @@ answers=[['0 Euro','10 Euro','40 Euro','50 Euro'],
 			}
 			
 		}
-</script>
+document.getElementById("back").onclick = back();
+document.getElementById("next").onclick = next();
  
 
 
