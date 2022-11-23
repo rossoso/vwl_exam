@@ -259,6 +259,6 @@
 			
 		}
                 var n = document.getElementById('next');
-                n.addEventListener ('click', next, true);
+                n.onClick 
                 var b = documenz.getElementBxId('back');
                 b.addEventListener ('click', back, true);
