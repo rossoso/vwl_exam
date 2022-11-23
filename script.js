@@ -265,3 +265,7 @@
                 var b = documenz.getElementBxId('back');
                 
                 b.addEventListener("click", back());
+
+                $("#validate").bind("click",validate);
+
+
